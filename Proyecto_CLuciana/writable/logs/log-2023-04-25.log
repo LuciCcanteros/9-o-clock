@@ -1,0 +1,37 @@
+CRITICAL - 2023-04-25 05:04:31 --> syntax error, unexpected double-quoted string ">Quienes Somos</a></li>", expecting "," or ";"
+in APPPATH\Views\navbar.php on line 25.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('principal', [], true)
+ 4 APPPATH\Controllers\Home.php(14): view('principal')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->principal()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-25 05:29:01 --> Invalid file: "terminosYUsos.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('terminosYUsos.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('terminosYUsos', [], true)
+ 3 APPPATH\Controllers\Home.php(29): view('terminosYUsos')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->terYUsosMetodo()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-25 05:29:08 --> Invalid file: "terminosYUsos.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('terminosYUsos.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('terminosYUsos', [], true)
+ 3 APPPATH\Controllers\Home.php(29): view('terminosYUsos')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->terYUsosMetodo()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-25 05:31:14 --> Invalid file: "metodosPYEMetodo.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('metodosPYEMetodo.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('metodosPYEMetodo', [], true)
+ 3 APPPATH\Controllers\Home.php(19): view('metodosPYEMetodo')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->metodosPYEMetodo()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

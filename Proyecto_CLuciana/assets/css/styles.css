@@ -1,0 +1,481 @@
+
+:root{
+    --color-principal: #53443a;
+    --color-secundario: #c2b3a9;
+    --color-terciario: #ca917f;
+    --color1: #462c33;
+    --color2: #644245;
+    --color3: #93625d;
+    --color4: #aa9b91;
+    --color5: #f6cfa4;
+}
+*{
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+  background-color: white;
+}
+
+h1, h2, h3 {
+  margin-top: 80px;
+}
+
+.line {
+  border-bottom: 5px solid black;
+  margin: 10px 0;
+}
+
+#carouselExampleCaptions {
+  margin-left: 50px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.carousel-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* responsive styles */
+@media screen and (max-width: 768px) {
+  #carouselExampleCaptions {
+    margin-left: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+
+h1,h2{
+  font-family: 'Outfit', sans-serif;
+  font-weight: bold;
+}
+
+h5{
+  font-family: Staatliches,curvise;
+}
+/*body custom*/
+body{
+    background-color:var(--color-secundario) !important;
+  }
+
+/* nav bar custom*/
+.navbar-custom{
+    background-color: var(--color-principal);
+     transition: background-color .5s ease;
+   
+    }
+    .navbar-scrolled {
+        background-color: var(--color-principal);
+      }
+
+
+
+/* PRINCIPAL */
+/* carousel*/
+
+    .carousel-custom{
+        background-color: var(--color-principal);
+        max-height: 600px;
+        display: flex;
+    }
+
+    .carousel--item-custom{
+        opacity:  50%;
+        overflow: hidden;
+    }
+    .carousel--item-custom img{
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+  }
+    .carousel--caption-custom{
+        position: absolute;
+        right: 25%;
+        top: 40%;;
+        left: 25%;
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+        color: #fff;
+        text-align: center;
+    
+   }
+   
+   #carousel-title{
+        font-size: 2.45rem;
+        font-weight: bolder;
+   }
+
+   #carousel-descripcion{
+    font-style: italic;
+   }
+
+   .principal--imagen{
+      height: 200px;
+      overflow: hidden;
+   }
+
+   .principal--imagen img{
+     width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+ 
+
+   .principal--overlay-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .principal--overlay-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+   
+}
+
+  .principal--text {
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+
+  .principalSeccion2{
+    margin:0 !important;
+
+  }
+
+  .principalSeccion2--col{
+    padding: 0 !important;
+    max-height: 400px;
+    overflow: hidden;
+  }
+
+  .principalSeccion2--texto{
+    background-color: var(--color-secundario);
+    color: #53443a;
+    font-weight: bold;
+    padding: 20px !important;
+  }
+
+   /* cards */
+
+   .card-custom{
+    margin-top: 30px;
+   }
+
+  .destacados{
+    padding:30px;
+    background-color: var(--color3);
+  }
+
+  .destacados--forma{
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .destacados--forma:hover{
+    transform: scale(1.1);
+  }
+
+  .destacados--card{
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .destacados--card:hover{
+    transform: scale(1.1);
+  }
+
+/* footer */
+
+.footer{
+    display: inline-block;
+    background-color:var(--color-principal);
+    color: #fff;
+    padding: 50px;
+    position: relative;
+}
+.footer--col{
+    padding: 20px;
+    margin: 10px;
+}
+
+.footer--img{
+    width: 200px;
+    height: auto;
+}
+.boton-social{
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+.boton-social:hover{
+    opacity: 1;
+}
+
+.footer--menu{
+    margin-bottom: 30px;
+    
+}
+.footer--menu-enlase{
+    color: rgba(255,255,255,.6);
+    margin: 0 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight:500;
+}
+
+.footer--menu-enlase:hover{
+    color:#fff;
+}
+
+/* sobremi */
+
+.sobremi{
+    color: #ffffff;
+    margin: 100px;
+    background-color: var(--color-terciario);
+
+}
+
+.sobremi--col{
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: space-between;
+    align-items: center;
+}
+.sobremi--descripcion{
+    padding: 30px;
+    font-style: italic;
+}
+
+#sobremi-titulo2{
+    text-align: center;
+}
+
+#sobremi--row1--col1{
+    margin:  0 ;
+    padding: 0;
+}
+#sobremi--row1--col2{
+  padding: 20px;  
+}
+
+#sobremi--row2--col1{
+    margin:  0;
+    padding: 0;
+}
+#sobremi--row2--col2{
+  padding: 20px;  
+}
+    /* animaciones en sobremi */
+    .overlay-container {
+        position: relative;
+      }
+      
+      .overlay-image {
+        display: block;
+        width: 100%;
+        height: auto;
+        transition:  transform .5s ease;
+    }
+
+      .overlay-image:hover{
+        transform: scale(1.1);
+      }
+      
+      .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+        transition: .5s ease;
+        background-color:#110a066c;
+      }
+      
+      .overlay:hover {
+        opacity: 1;
+      }
+
+      
+      .text {
+        color: white;
+        font-size: 50px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+      }
+    
+/* contacto */
+ .contacto{
+    margin-top: 150px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 150px;
+    background-color: var(--color-terciario);
+    padding: 0;
+    
+}
+
+.contacto--texto{
+    padding: 30px;
+    color:#fff;
+    background-color:var(--color-terciario);
+}
+
+.contacto--form{
+    color: #fff;
+    margin-top: 40%;
+    padding: 30px;
+}
+
+.contacto--campo{
+    margin: 10px 0 10px 0;
+}
+
+.contacto--boton{
+    background-color: var(--color-principal);
+}
+  
+
+/*  Terminos y condiciones  */
+
+.termYcond {
+    margin-top: 50px;
+    color: var(--color-principal);
+    padding: 50px;
+   
+  }
+  .tienda--cards-custom{
+    margin-top: 100px;
+   }
+
+
+  /* tienda */
+  .tienda--velas{
+    margin-top: 100px ;
+  }
+  #tienda--aromas--titulo, #tienda--velas--titulo {
+    font-size: 60px;
+    color: #fff;
+    margin-top: 40px;
+  }
+  
+  /* comercializacion   */
+  .comercializacion--guiacompra{
+    padding: 30px;
+    border-radius: 2%;
+    background-color: var(--color4);
+    margin: 50px;
+    color: #462c33;
+  }
+  .guiacompra--col{
+    padding: 20px;
+  }
+  ul{
+    list-style: none;
+  }
+  .comercializacion--mediospago{
+    padding: 30px;
+    border-radius: 2%;
+    background-color: var(--color4);
+
+    color: #462c33;
+  }
+  .grid-container__row{
+    background-color: #fff;
+    margin: 40px;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  .payment-list__title {
+    margin:0 !important;
+    color: var(--color1)
+  }
+  .comercializacion--title{
+    color:var(--color1);
+    margin:20px;
+  }
+
+  /* registro */
+/* .registro--img{
+  padding: 0 !important;
+  opacity: 60%;
+}
+.registro--form-conteiner{
+  position:absolute;
+  background-color: var(--color4);
+  padding: 60px;
+  max-height: 700px;
+}
+.registro--form{
+  padding: 60px;
+}
+*/
+  .form-group{
+    margin-bottom: 10px !important;
+  } 
+ 
+  .registro{
+    color: #fff;
+    margin-top: 150px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 150px;
+    background-color: var(--color-terciario);
+    padding: 0;
+    
+}
+.registro--texto{
+    padding: 30px;
+    color:#fff;
+    background-color:var(--color-terciario);
+}
+
+.registro-form{
+   
+    margin-top: 40%;
+    padding: 30px;
+}
+
+.registro--campo{
+    margin-bottom: 10px;
+}
+
+.registro--boton{
+    background-color: var(--color-principal);
+}
+
+.registro--col{
+  display:grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+#registro--col1{
+  padding: 50px;
+}
+
+#inicioSesion--col1{
+  padding: 10px;
+}
+
+.registro--form{
+  display: inline;
+  margin: 60px;
+}
+
+/* formularios */
+.is-danger{
+  color:rgb(165, 8, 8) ;
+  font-size: 15px;
+}
