@@ -47,7 +47,6 @@
             <th>Nombre</th>
             <th>Marca</th>
             <th>Stock</th>
-            <th></th>
         </thead>
         <tbody>
             <?php foreach ($producto as $row){ ?>
@@ -57,7 +56,7 @@
                 <td><?php echo $row['categoria_desc'];?></td>
                 <td><?php echo $row['producto_stock'];?></td>
                 <td><a href="<?php echo base_url('editar/'.$row['producto_id']);?>">
-                    <img src="assets/img/lapizEditar.png" alt="Editar" width="50">
+                    <img src="assets/img/lapizEditar.png" alt="Editar" width="50"> 
                 </a>
                 </td>
                 

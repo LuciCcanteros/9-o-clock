@@ -44,9 +44,8 @@
               <a class="nav-link" href="<?php echo base_url('/');?>"><?php echo session('usuario');?></a>
         </li>
 
-        <li class="nav-item"> 
-          <a class="nav-link" href="<?php echo base_url('cerrarSesion') ;?>">Salir</a>
-        </li>
+        <li class="nav-item"> <a class="nav-link" href="<?php echo base_url('cerrarSesion') ;?>">Mis compras</a></li>
+        <li class="nav-item"> <a class="nav-link" href="<?php echo base_url('cerrarSesion') ;?>">Salir</a></li>
           
         <!-- DEFAULT -->
         <?php } else { ?>

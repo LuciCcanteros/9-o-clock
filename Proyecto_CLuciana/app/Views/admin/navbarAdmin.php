@@ -13,19 +13,26 @@
           <a class="nav-link" href="<?php echo base_url('homeAdmin');?>">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?php echo base_url('listarConsultas') ;?>">Ver consultas</a>
+          <a class="nav-link" href="<?php echo base_url('agregarProducto') ;?>">Agregar producto</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="<?php echo base_url('agregarProducto') ;?>">Agregar Producto</a>
+
+        <!-- DROPDOWN -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Usuarios</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="<?php echo base_url('gestionarUsuarios');?>">Mis usuarios</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="<?php echo base_url('listarConsultas') ;?>">Mis consultas</a></li>
+          </ul>
         </li>
 
         <!-- DROPDOWN -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Ventas</a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="<?php echo base_url('gestionar');?>">Ver todos los productos</a></li>
+            <li><a class="dropdown-item" href="<?php echo base_url('gestionar');?>">Mis productos</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="<?php echo base_url('verVentas');?>">Ver todas las ventas</a></li>
+            <li><a class="dropdown-item" href="<?php echo base_url('verVentas');?>">Mis ventas</a></li>
           </ul>
         </li>
 

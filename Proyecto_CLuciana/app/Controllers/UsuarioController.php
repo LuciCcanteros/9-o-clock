@@ -106,7 +106,7 @@ class UsuarioController extends BaseController
             ],
         ]);
 
-        if (!$validation->withRequest($this->request)->run()) {
+        if ((!$validation->withRequest($this->request)->run()) && ('usuario_estado' == 'no')) {
             return redirect()->back()->withInput()->with('errors',$validation->getErrors());
         } else {
             $request = \Config\Services::request();
@@ -119,29 +119,34 @@ class UsuarioController extends BaseController
             $usuario = $userModel->where('usuario_email', $email)->first();
            
             if($usuario){
-                
                 $contrasenia_usuario = $usuario['usuario_contrasenia'];
                 $contrasenia_verif = password_verify($contrasenia, $contrasenia_usuario);
+
                 if($contrasenia_verif){
-              
-                    $data = [
-                        'id' => $usuario['usuario_id'],
-                        'nombre' => $usuario['usuario_nombre'],
-                        'apellido' => $usuario['usuario_apellido'],
-                        'perfil' => $usuario['perfil_id'],
-                        'login' => TRUE
-                    ];
                     
-                    $session->set($data);
-                   
-                    switch(session('perfil')){
-                        case '1':
-                            return redirect()->route('homeAdmin');
-                            break;
-                        case '2':
-                            return redirect()->route('/');
-                            break;
+                    if($usuario['usuario_estado'] == 'si'){
+                        $data = [
+                            'id' => $usuario['usuario_id'],
+                            'nombre' => $usuario['usuario_nombre'],
+                            'apellido' => $usuario['usuario_apellido'],
+                            'perfil' => $usuario['perfil_id'],
+                            'login' => TRUE
+                        ];
+                        
+                        $session->set($data);
+                       
+                        switch(session('perfil')){
+                            case '1':
+                                return redirect()->route('homeAdmin');
+                                break;
+                            case '2':
+                                return redirect()->route('/');
+                                break;
+                        }
+                    } else {
+                        return redirect()->back()->withInput()->with('mensaje', 'No es posible ingresar, suario inactivo');
                     }
+                    
                 }else{
                     return redirect()->back()->withInput()->with('mensaje', 'Contraseña incorrecta');
                     //$session->setFlashdata('mensaje','Usuario y/o contraseña incorrecto');

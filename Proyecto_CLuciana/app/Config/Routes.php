@@ -65,6 +65,10 @@ $routes->post('registrarConsulta', 'ConsultaController::registrarConsultaControl
     $routes->post('actualizar', 'AdminController::actualizarProductoAdmin');
     $routes->post('insertarProducto', 'AdminController::registrarProductoAdmin');
 
+    //Usuarios
+    $routes->get('gestionarUsuarios', 'GentionUsuariosController::gestionarUsuariosAdmin');
+    $routes->get('cambiarEstado/(:any)', 'GentionUsuariosController::cambiarEstadoUsuario/$1');
+
     //listas
     $routes->get('producto','AdminController::listarProductosAdmin');
     $routes->get('listarConsultas','AdminController::verConsultas');

@@ -34,7 +34,7 @@
                 </div>
 
                 <div class="col-md-4">
-                    <a href="<?php echo base_url('consulta'); ?>" class="card-link" style="text-decoration:none; color: inherit;">
+                    <a href="<?php echo base_url('listarConsultas'); ?>" class="card-link" style="text-decoration:none; color: inherit;">
                         <div class="card h-100" style="border: none; background-color: #212121;">
                             <img src="assets/img/consultas.gif" class="card-img-top" alt="Icono 3" style="width: 120px; height: 120px; margin: auto; margin-top: 20px;">
                             <div class="card-body" style="color: #F6F6F6;">

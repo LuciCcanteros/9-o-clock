@@ -23,7 +23,7 @@ class AdminController extends BaseController
 
         return view('header', $data).view('admin/navbarAdmin').view('admin/agregarProducto', $data).view('footer');
     }
-
+    
     public function registrarProductoAdmin(){
 
         if (! $this->request->is('post')) {
